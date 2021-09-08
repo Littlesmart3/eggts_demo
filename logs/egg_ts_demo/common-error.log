@@ -1,0 +1,478 @@
+2021-11-02 23:22:03,273 ERROR 17022 [-/127.0.0.1/-/0ms GET /] nodejs.ENOENTError: connect ENOENT xxxx
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)
+    --------------------
+    at Protocol._enqueue (/Users/lee/code/egg-ts/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/lee/code/egg-ts/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/lee/code/egg-ts/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/Users/lee/code/egg-ts/node_modules/mysql/lib/Pool.js:48:16)
+    at /Users/lee/code/egg-ts/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/lee/code/egg-ts/node_modules/ali-rds/node_modules/pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/Users/lee/code/egg-ts/node_modules/ali-rds/node_modules/pify/index.js:56:34)
+    at Pool.query (/Users/lee/code/egg-ts/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/lee/code/egg-ts/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    sql: select now() as currentTime;
+errno: -2
+code: "ENOENT"
+syscall: "connect"
+address: "xxxx"
+fatal: true
+name: "ENOENTError"
+pid: 17022
+hostname: Lee.local
+
+2021-11-03 10:21:39,883 ERROR 19756 [-/127.0.0.1/-/13ms GET /lee/my] nodejs.AssertionError: Can't find jspang.html from /Users/lee/code/egg-ts/app/view
+    at Map.resolve (/Users/lee/code/egg-ts/node_modules/egg-view/lib/view_manager.js:74:5)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:50:22)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:7:5)
+    at /Users/lee/code/egg-ts/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at xframe (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at xssProtection (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at nosniff (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at noopen (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at session (/Users/lee/code/egg-ts/node_modules/koa-session/index.js:41:7)
+    at bodyParser (/Users/lee/code/egg-ts/node_modules/koa-bodyparser/index.js:95:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 19756
+hostname: Lee.local
+
+2021-11-03 10:21:42,745 ERROR 19756 [-/127.0.0.1/-/8ms GET /lee/my] nodejs.AssertionError: Can't find jspang.html from /Users/lee/code/egg-ts/app/view
+    at Map.resolve (/Users/lee/code/egg-ts/node_modules/egg-view/lib/view_manager.js:74:5)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:50:22)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:7:5)
+    at /Users/lee/code/egg-ts/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at xframe (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at xssProtection (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at nosniff (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at noopen (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at session (/Users/lee/code/egg-ts/node_modules/koa-session/index.js:41:7)
+    at bodyParser (/Users/lee/code/egg-ts/node_modules/koa-bodyparser/index.js:95:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 19756
+hostname: Lee.local
+
+2021-11-03 10:21:57,308 ERROR 19756 [-/127.0.0.1/-/8ms GET /lee/my] nodejs.AssertionError: Can't find jspang.html from /Users/lee/code/egg-ts/app/view
+    at Map.resolve (/Users/lee/code/egg-ts/node_modules/egg-view/lib/view_manager.js:74:5)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:50:22)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:7:5)
+    at /Users/lee/code/egg-ts/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at xframe (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at xssProtection (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at nosniff (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at noopen (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at session (/Users/lee/code/egg-ts/node_modules/koa-session/index.js:41:7)
+    at bodyParser (/Users/lee/code/egg-ts/node_modules/koa-bodyparser/index.js:95:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 19756
+hostname: Lee.local
+
+2021-11-03 10:21:58,360 ERROR 19756 [-/127.0.0.1/-/2ms GET /lee/my] nodejs.AssertionError: Can't find jspang.html from /Users/lee/code/egg-ts/app/view
+    at Map.resolve (/Users/lee/code/egg-ts/node_modules/egg-view/lib/view_manager.js:74:5)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:50:22)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:7:5)
+    at /Users/lee/code/egg-ts/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at xframe (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at xssProtection (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at nosniff (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at noopen (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at session (/Users/lee/code/egg-ts/node_modules/koa-session/index.js:41:7)
+    at bodyParser (/Users/lee/code/egg-ts/node_modules/koa-bodyparser/index.js:95:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 19756
+hostname: Lee.local
+
+2021-11-03 11:05:22,927 ERROR 1745 [-/127.0.0.1/-/15ms GET /lee/my] nodejs.ReferenceError: /Users/lee/code/egg-ts/app/view/lee.html:29
+    27| <body>
+    28|     <!-- <% include header.html %>
+ >> 29|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    30|         <h3>你好，我是<%= name %>
+    31|                 <%= age %>岁</h3>
+    32|         <br />
+
+id is not defined
+    27| <body>
+    28|     <!-- <% include header.html %>
+ >> 29|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    30|         <h3>你好，我是<%= name %>
+    31|                 <%= age %>岁</h3>
+    32|         <br />
+
+id is not defined
+    at eval (/Users/lee/code/egg-ts/app/view/lee.html:24:26)
+    at lee (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:254:36)
+    at Object.exports.renderFile (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:485:10)
+    at /Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:16:11
+    at new Promise (<anonymous>)
+    at EjsView.[EjsView#_render] (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:15:12)
+    at EjsView.render (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:28:36)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:70:23)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:6:5)
+path: "/Users/lee/code/egg-ts/app/view/lee.html"
+pid: 1745
+hostname: Lee.local
+
+2021-11-03 11:05:50,165 ERROR 1745 [-/127.0.0.1/-/6ms GET /lee/my] nodejs.ReferenceError: /Users/lee/code/egg-ts/app/view/lee.html:29
+    27| <body>
+    28|     <% include header.html %>
+ >> 29|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    30|         <h3>你好，我是<%= name %>
+    31|                 <%= age %>岁</h3>
+    32|         <br />
+
+id is not defined
+    27| <body>
+    28|     <% include header.html %>
+ >> 29|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    30|         <h3>你好，我是<%= name %>
+    31|                 <%= age %>岁</h3>
+    32|         <br />
+
+id is not defined
+    at eval (/Users/lee/code/egg-ts/app/view/lee.html:24:26)
+    at lee (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:254:36)
+    at Object.exports.renderFile (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:485:10)
+    at /Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:16:11
+    at new Promise (<anonymous>)
+    at EjsView.[EjsView#_render] (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:15:12)
+    at EjsView.render (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:28:36)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:70:23)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:6:5)
+path: "/Users/lee/code/egg-ts/app/view/lee.html"
+pid: 1745
+hostname: Lee.local
+
+2021-11-03 11:05:51,091 ERROR 1745 [-/127.0.0.1/-/9ms GET /lee/my] nodejs.ReferenceError: /Users/lee/code/egg-ts/app/view/lee.html:29
+    27| <body>
+    28|     <% include header.html %>
+ >> 29|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    30|         <h3>你好，我是<%= name %>
+    31|                 <%= age %>岁</h3>
+    32|         <br />
+
+id is not defined
+    27| <body>
+    28|     <% include header.html %>
+ >> 29|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    30|         <h3>你好，我是<%= name %>
+    31|                 <%= age %>岁</h3>
+    32|         <br />
+
+id is not defined
+    at eval (/Users/lee/code/egg-ts/app/view/lee.html:24:26)
+    at lee (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:254:36)
+    at Object.exports.renderFile (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:485:10)
+    at /Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:16:11
+    at new Promise (<anonymous>)
+    at EjsView.[EjsView#_render] (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:15:12)
+    at EjsView.render (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:28:36)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:70:23)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:6:5)
+path: "/Users/lee/code/egg-ts/app/view/lee.html"
+pid: 1745
+hostname: Lee.local
+
+2021-11-03 11:06:09,011 ERROR 1745 [-/127.0.0.1/-/3ms GET /lee/my] nodejs.ReferenceError: /Users/lee/code/egg-ts/app/view/lee.html:15
+    13| <body>
+    14|     <% include header.html %>
+ >> 15|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    16|         <h3>你好，我是<%= name %>
+    17|                 <%= age %>岁</h3>
+    18|         <br />
+
+id is not defined
+    13| <body>
+    14|     <% include header.html %>
+ >> 15|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    16|         <h3>你好，我是<%= name %>
+    17|                 <%= age %>岁</h3>
+    18|         <br />
+
+id is not defined
+    at eval (/Users/lee/code/egg-ts/app/view/lee.html:24:26)
+    at lee (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:254:36)
+    at Object.exports.renderFile (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:485:10)
+    at /Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:16:11
+    at new Promise (<anonymous>)
+    at EjsView.[EjsView#_render] (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:15:12)
+    at EjsView.render (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:28:36)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:70:23)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:6:5)
+path: "/Users/lee/code/egg-ts/app/view/lee.html"
+pid: 1745
+hostname: Lee.local
+
+2021-11-03 11:06:20,369 ERROR 1745 [-/127.0.0.1/-/2ms GET /lee/my] nodejs.ReferenceError: /Users/lee/code/egg-ts/app/view/lee.html:15
+    13| <body>
+    14|     <% include header.html %>
+ >> 15|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    16|         <h3>你好，我是<%= name %>
+    17|                 <%= age %>岁</h3>
+    18|         <br />
+
+id is not defined
+    13| <body>
+    14|     <% include header.html %>
+ >> 15|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    16|         <h3>你好，我是<%= name %>
+    17|                 <%= age %>岁</h3>
+    18|         <br />
+
+id is not defined
+    at eval (/Users/lee/code/egg-ts/app/view/lee.html:24:26)
+    at lee (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:254:36)
+    at Object.exports.renderFile (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:485:10)
+    at /Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:16:11
+    at new Promise (<anonymous>)
+    at EjsView.[EjsView#_render] (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:15:12)
+    at EjsView.render (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:28:36)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:70:23)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:6:5)
+path: "/Users/lee/code/egg-ts/app/view/lee.html"
+pid: 1745
+hostname: Lee.local
+
+2021-11-03 11:06:21,282 ERROR 1745 [-/127.0.0.1/-/6ms GET /lee/my] nodejs.ReferenceError: /Users/lee/code/egg-ts/app/view/lee.html:15
+    13| <body>
+    14|     <% include header.html %>
+ >> 15|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    16|         <h3>你好，我是<%= name %>
+    17|                 <%= age %>岁</h3>
+    18|         <br />
+
+id is not defined
+    13| <body>
+    14|     <% include header.html %>
+ >> 15|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    16|         <h3>你好，我是<%= name %>
+    17|                 <%= age %>岁</h3>
+    18|         <br />
+
+id is not defined
+    at eval (/Users/lee/code/egg-ts/app/view/lee.html:24:26)
+    at lee (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:254:36)
+    at Object.exports.renderFile (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:485:10)
+    at /Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:16:11
+    at new Promise (<anonymous>)
+    at EjsView.[EjsView#_render] (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:15:12)
+    at EjsView.render (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:28:36)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:70:23)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:6:5)
+path: "/Users/lee/code/egg-ts/app/view/lee.html"
+pid: 1745
+hostname: Lee.local
+
+2021-11-03 11:07:25,410 ERROR 1745 [-/127.0.0.1/-/4ms GET /lee/my] nodejs.ReferenceError: /Users/lee/code/egg-ts/app/view/lee.html:15
+    13| <body>
+    14|     <% include header.html %>
+ >> 15|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    16|         <h3>你好，我是<%= name %>
+    17|                 <%= age %>岁</h3>
+    18|         <br />
+
+id is not defined
+    13| <body>
+    14|     <% include header.html %>
+ >> 15|         <h2>现在由<%= id %>号技师，为你服务!</h2>
+    16|         <h3>你好，我是<%= name %>
+    17|                 <%= age %>岁</h3>
+    18|         <br />
+
+id is not defined
+    at eval (/Users/lee/code/egg-ts/app/view/lee.html:24:26)
+    at lee (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:254:36)
+    at Object.exports.renderFile (/Users/lee/code/egg-ts/node_modules/ejs/lib/ejs.js:485:10)
+    at /Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:16:11
+    at new Promise (<anonymous>)
+    at EjsView.[EjsView#_render] (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:15:12)
+    at EjsView.render (/Users/lee/code/egg-ts/node_modules/egg-view-ejs/lib/view.js:28:36)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:70:23)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:6:5)
+path: "/Users/lee/code/egg-ts/app/view/lee.html"
+pid: 1745
+hostname: Lee.local
+
+2021-11-03 18:11:12,280 ERROR 8482 nodejs.ClusterClientNoResponseError: client no response in 208352ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/lee/code/egg-ts/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 8482
+hostname: Lee.local
+
+2021-11-03 18:48:31,982 ERROR 8482 nodejs.ClusterClientNoResponseError: client no response in 214524ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/lee/code/egg-ts/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 8482
+hostname: Lee.local
+
+2021-11-03 18:49:59,526 ERROR 8482 nodejs.ClusterClientNoResponseError: client no response in 87439ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/lee/code/egg-ts/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 8482
+hostname: Lee.local
+
+2021-11-03 19:29:14,206 ERROR 8482 nodejs.ClusterClientNoResponseError: client no response in 934386ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/lee/code/egg-ts/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 8482
+hostname: Lee.local
+
+2021-11-03 19:45:20,201 ERROR 8482 nodejs.ClusterClientNoResponseError: client no response in 965992ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/lee/code/egg-ts/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 8482
+hostname: Lee.local
+
+2021-11-03 19:56:10,853 ERROR 8482 nodejs.ClusterClientNoResponseError: client no response in 650649ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/lee/code/egg-ts/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 8482
+hostname: Lee.local
+
+2021-11-03 20:31:12,998 ERROR 10132 [-/127.0.0.1/-/47ms POST /add] nodejs.AssertionError: argument value is invalid
+    at new Cookie (/Users/lee/code/egg-ts/node_modules/egg-cookies/lib/cookie.js:25:5)
+    at Cookies.set (/Users/lee/code/egg-ts/node_modules/egg-cookies/lib/cookies.js:123:20)
+    at HomeController.add (/Users/lee/code/egg-ts/app/controller/lee.ts:49:17)
+    at Object.callFn (/Users/lee/code/egg-ts/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/lee/code/egg-ts/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/lee/code/egg-ts/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/lee/code/egg-ts/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/lee/code/egg-ts/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/lee/code/egg-ts/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/lee/code/egg-ts/node_modules/@eggjs/router/lib/router.js:186:18
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 10132
+hostname: Lee.local
+
+2021-11-03 20:31:14,247 ERROR 10132 [-/127.0.0.1/-/11ms POST /add] nodejs.AssertionError: argument value is invalid
+    at new Cookie (/Users/lee/code/egg-ts/node_modules/egg-cookies/lib/cookie.js:25:5)
+    at Cookies.set (/Users/lee/code/egg-ts/node_modules/egg-cookies/lib/cookies.js:123:20)
+    at HomeController.add (/Users/lee/code/egg-ts/app/controller/lee.ts:49:17)
+    at Object.callFn (/Users/lee/code/egg-ts/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/lee/code/egg-ts/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/lee/code/egg-ts/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/lee/code/egg-ts/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/lee/code/egg-ts/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/lee/code/egg-ts/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/lee/code/egg-ts/node_modules/@eggjs/router/lib/router.js:186:18
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 10132
+hostname: Lee.local
+
+2021-11-03 20:35:55,509 ERROR 10286 [-/127.0.0.1/-/23ms GET /lee/my] nodejs.AssertionError: Can't find jspang.html from /Users/lee/code/egg-ts/app/view
+    at Map.resolve (/Users/lee/code/egg-ts/node_modules/egg-view/lib/view_manager.js:74:5)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:50:22)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:8:5)
+    at /Users/lee/code/egg-ts/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at xframe (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at xssProtection (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at nosniff (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at noopen (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at session (/Users/lee/code/egg-ts/node_modules/koa-session/index.js:41:7)
+    at bodyParser (/Users/lee/code/egg-ts/node_modules/koa-bodyparser/index.js:95:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 10286
+hostname: Lee.local
+
+2021-11-03 20:35:57,845 ERROR 10286 [-/127.0.0.1/-/8ms GET /lee/my] nodejs.AssertionError: Can't find jspang.html from /Users/lee/code/egg-ts/app/view
+    at Map.resolve (/Users/lee/code/egg-ts/node_modules/egg-view/lib/view_manager.js:74:5)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:50:22)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:8:5)
+    at /Users/lee/code/egg-ts/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at xframe (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at xssProtection (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at nosniff (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at noopen (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at session (/Users/lee/code/egg-ts/node_modules/koa-session/index.js:41:7)
+    at bodyParser (/Users/lee/code/egg-ts/node_modules/koa-bodyparser/index.js:95:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 10286
+hostname: Lee.local
+
+2021-11-03 20:35:58,586 ERROR 10286 [-/127.0.0.1/-/5ms GET /lee/my] nodejs.AssertionError: Can't find jspang.html from /Users/lee/code/egg-ts/app/view
+    at Map.resolve (/Users/lee/code/egg-ts/node_modules/egg-view/lib/view_manager.js:74:5)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:50:22)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:8:5)
+    at /Users/lee/code/egg-ts/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at xframe (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at xssProtection (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at nosniff (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at noopen (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at session (/Users/lee/code/egg-ts/node_modules/koa-session/index.js:41:7)
+    at bodyParser (/Users/lee/code/egg-ts/node_modules/koa-bodyparser/index.js:95:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 10286
+hostname: Lee.local
+
+2021-11-03 20:35:59,741 ERROR 10286 [-/127.0.0.1/-/2ms GET /lee/my] nodejs.AssertionError: Can't find jspang.html from /Users/lee/code/egg-ts/app/view
+    at Map.resolve (/Users/lee/code/egg-ts/node_modules/egg-view/lib/view_manager.js:74:5)
+    at ContextView.[contextView#render] (/Users/lee/code/egg-ts/node_modules/egg-view/lib/context_view.js:50:22)
+    at HomeController.index (/Users/lee/code/egg-ts/app/controller/lee.ts:8:5)
+    at /Users/lee/code/egg-ts/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at xframe (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at xssProtection (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at nosniff (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at noopen (/Users/lee/code/egg-ts/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at session (/Users/lee/code/egg-ts/node_modules/koa-session/index.js:41:7)
+    at bodyParser (/Users/lee/code/egg-ts/node_modules/koa-bodyparser/index.js:95:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 10286
+hostname: Lee.local
+
