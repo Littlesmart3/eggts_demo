@@ -8,5 +8,7 @@ export default (app: Application) => {
 
   router.get('/lee/my', controller.lee.index);
   router.get('/lee/my', controller.lee.index);
-
+  router.get('/getGirl', controller.lee.getGirl);
+  router.post('/add', controller.lee.add);
+  router.get('/testGetGirl', controller.home.testGetGirl);
 };
