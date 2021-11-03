@@ -14,7 +14,7 @@ export default (appInfo: EggAppInfo) => {
     // 单数据库信息配置
     client: {
       // host
-      host: 'littlesmart3.top',
+      host: '114.55.101.4',
       // 端口号
       port: '3306',
       // 用户名
@@ -28,6 +28,19 @@ export default (appInfo: EggAppInfo) => {
     app: true,
     // 是否加载到 agent 上，默认关闭
     agent: false,
+  };
+
+  config.view = {
+    mapping: {
+      '.html': 'ejs',
+    },
+  };
+
+  config.ejs = {
+    // delimiter: '$',
+  };
+  config.static = {
+    prefix: '/assets/',
   };
 
   config.security = {

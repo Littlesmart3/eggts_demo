@@ -25,6 +25,7 @@
     "egg": "^2.6.1",
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.6.0",
+    "egg-view-ejs": "^2.0.1",
     "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
