@@ -39,6 +39,16 @@ export default (appInfo: EggAppInfo) => {
   config.ejs = {
     // delimiter: '$',
   };
+
+  config.session = {
+    key: 'PANG_SESS', // 设置Key的默认值
+    httpOnly: true, // 设置服务端操作
+    maxAge: 1000 * 60, // 设置最大有效时间
+    renew: true, // 页面有访问动作自动刷新session
+  };
+
+  // config.middleware = [ 'counter' ];
+
   config.static = {
     prefix: '/assets/',
   };

@@ -3,18 +3,22 @@ import { Controller } from 'egg';
 export default class HomeController extends Controller {
   public async index() {
     const { ctx } = this;
-    // await ctx.render('lee.html');
+    // 获取Session
+    const username = ctx.session.username;
     await ctx.render(
       'lee.html', {
         id: 2021,
         name: '小红',
         age: 18,
+        // 赋值给模板
+        username,
         skills: [
           '泰式按摩',
           '精油搓背',
           '水疗SPA',
         ],
       });
+    console.log(ctx.session.counter);
   }
 
   // public async getGirl() {
@@ -36,9 +40,22 @@ export default class HomeController extends Controller {
 
   }
 
+  // async add() {
+  //   const ctx = this.ctx;
+  //   ctx.cookies.set('user', 'jspang.com');
+  //   ctx.body = {
+  //     status: 200,
+  //     data: 'Cookie添加成功',
+  //   };
+  // }
   async add() {
     const ctx = this.ctx;
-    ctx.cookies.set('user', 'jspang.com');
+    ctx.session.username = '我的天呐！！';
+    ctx.cookies.set('user', '哇哈哈', {
+      maxAge: 1000 * 60,
+      encrypt: true,
+      httpOnly: false,
+    });
     ctx.body = {
       status: 200,
       data: 'Cookie添加成功',
@@ -47,6 +64,7 @@ export default class HomeController extends Controller {
   async del() {
     const ctx = this.ctx;
     ctx.cookies.set('user', null);
+    ctx.session.username = null;
     ctx.body = {
       status: 200,
       data: 'Cookie删除成功',
@@ -62,7 +80,9 @@ export default class HomeController extends Controller {
   }
   async show() {
     const ctx = this.ctx;
-    const user = ctx.cookies.get('user');
+    const user = ctx.cookies.get('user', {
+      encrypt: true,
+    });
     console.log(user);
     ctx.body = {
       status: 200,
